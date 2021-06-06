@@ -1,7 +1,3 @@
-import util.CurrentConversion;
-import util.Output;
-import util.UsrInput;
-
 /*
 UCF COP3330 Summer 2021 Assignment 1 Solution
 Copyright 2021 first_name last_name
@@ -32,6 +28,11 @@ Constraints
 Ensure that fractions of a cent are rounded up to the next penny.
 Use a single output statement.
  */
+
+import util.CurrentConversion;
+import util.Output;
+import util.UsrInput;
+
 public class CurrencyConversionApp {
 
     public static void main(String[] args) {
@@ -40,6 +41,5 @@ public class CurrencyConversionApp {
         double dollarsAmt = CurrentConversion.calcDollarsAmt(eurosAmt, rate);
 
         Output.printOutput(eurosAmt, rate, dollarsAmt);
-
     }
 }
